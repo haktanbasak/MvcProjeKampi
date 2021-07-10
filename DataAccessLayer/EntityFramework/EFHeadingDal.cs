@@ -1,6 +1,10 @@
-﻿namespace DataAccessLayer.EntityFramework
+﻿using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete.Repositories;
+using EntityLayer.Concrete;
+
+namespace DataAccessLayer.EntityFramework
 {
-    public class EFHeadingDal
+    public class EFHeadingDal: GenericRepository<Heading>, IHeadingDal
     {
     }
 }
