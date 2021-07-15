@@ -1,0 +1,23 @@
+﻿@model EntityLayer.Concrete.Talent
+@{
+    ViewBag.Title = "UpdateTalent";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yetenek Ekle</h2>
+<br />
+
+@using (Html.BeginForm("UpdateTalent", "Talent", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.TextBoxFor(x => x.AdminID, new { @class = "form-control" })
+        @Html.TextBoxFor(x => x.TalentID, new { @class = "form-control" })
+        @Html.Label("Yeteneğiniz")
+        @Html.TextBoxFor(x => x.TalentName, new { @class = "form-control" })
+        <br /><br />
+        @Html.Label("Yetenek Puanınız")
+        @Html.TextAreaFor(x => x.TalentPercent, new { @class = "form-control" })
+        <br /><br />
+        <button id="btn3" class="btn btn-info">Kaydet</button>
+    </div>
+}

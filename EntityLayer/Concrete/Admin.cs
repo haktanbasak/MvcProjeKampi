@@ -18,6 +18,10 @@ namespace EntityLayer.Concrete
         [StringLength(50)]
         public string AdminPassword { get; set; }
 
+        public byte[] PasswordSalt { get; set; }
+
+        public byte[] PasswordHash { get; set; }
+
         [StringLength(1)]
         public string AdminRole { get; set; }
     }

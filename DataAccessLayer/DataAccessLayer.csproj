@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IAboutDal.cs" />
+    <Compile Include="Abstract\IAdminDal.cs" />
     <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
@@ -59,17 +60,20 @@
     <Compile Include="Abstract\IImageFileDal.cs" />
     <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
+    <Compile Include="Abstract\ITalentDal.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\CategoryRepository.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
     <Compile Include="EntityFramework\EFAboutDal.cs" />
+    <Compile Include="EntityFramework\EFAdminDal.cs" />
     <Compile Include="EntityFramework\EFCategoryDal.cs" />
     <Compile Include="EntityFramework\EFContactDal.cs" />
     <Compile Include="EntityFramework\EFContentDal.cs" />
     <Compile Include="EntityFramework\EFHeadingDal.cs" />
     <Compile Include="EntityFramework\EFImageFileDal.cs" />
     <Compile Include="EntityFramework\EFMessageDal.cs" />
+    <Compile Include="EntityFramework\EFTalentDal.cs" />
     <Compile Include="EntityFramework\EFWriterDal.cs" />
     <Compile Include="Migrations\202106210108247_mig1.cs" />
     <Compile Include="Migrations\202106210108247_mig1.designer.cs">
@@ -118,6 +122,14 @@
     <Compile Include="Migrations\202107121454344_mig_admin_table.cs" />
     <Compile Include="Migrations\202107121454344_mig_admin_table.designer.cs">
       <DependentUpon>202107121454344_mig_admin_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107151411533_mig_talent.cs" />
+    <Compile Include="Migrations\202107151411533_mig_talent.designer.cs">
+      <DependentUpon>202107151411533_mig_talent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107151437233_mig_salthash.cs" />
+    <Compile Include="Migrations\202107151437233_mig_salthash.designer.cs">
+      <DependentUpon>202107151437233_mig_salthash.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -168,6 +180,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107121454344_mig_admin_table.resx">
       <DependentUpon>202107121454344_mig_admin_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107151411533_mig_talent.resx">
+      <DependentUpon>202107151411533_mig_talent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107151437233_mig_salthash.resx">
+      <DependentUpon>202107151437233_mig_salthash.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
