@@ -9,7 +9,7 @@ namespace BusinessLayer.Abstract
 {
     public interface IMessageService
     {
-        List<Message> GetListInbox();
+        List<Message> GetListInbox();  
         List<Message> GetListSendbox();
         int GetUnReadenInboxNumber(string mail);
         int GetUnReadenSendboxNumber(string mail);
